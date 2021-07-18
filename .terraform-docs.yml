@@ -1,0 +1,27 @@
+formatter: markdown
+
+sections:
+  hide: []
+  show: [providers, requirements, inputs, outputs]
+
+content: |-
+  {{ .Providers }}
+
+  {{ .Requirements }}
+
+  {{ .Inputs }}
+
+  {{ .Outputs }}
+
+  ## Example
+  ```hcl
+  {{ include "example.tfvars" }}
+  ```
+
+output:
+  file: "README.md"
+  mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+    {{ .Content }}
+    <!-- END_TF_DOCS -->

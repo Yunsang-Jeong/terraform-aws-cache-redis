@@ -1,0 +1,26 @@
+# General
+**/.DS_Store
+**/.vscode/
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+**/*.tfstate
+**/*.tfstate.backup
+**/*.tfstate.lock.info
+**/*.tfstate.*
+
+# lock file
+**/.terraform.lock.hcl
+
+# log files
+**/*.log
+
+# Credential
+**/*.tfvars
+**/*.pem
+**/*.bak
+**/*.plan
+
+!example.tfvars
